@@ -1,0 +1,95 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; /* Prevents padding/borders from breaking widths */
+}
+
+body { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    font-family: "Inter" , sans-serif;
+}
+
+header{
+    margin-bottom: 25px;
+}
+
+.container { 
+    padding: 10px 20px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#to-do-list {
+    display: flex;
+    flex-direction: column; /* Stack the list items vertically */
+    gap: 8px;               /* Adds clean spacing between items */
+    width: 100%;            /* Forces the list to fill the 300px container */
+    list-style: none;
+     /* Keeping your border */
+        /* Optional: adds breathing room inside the box */
+}
+
+#to-do-list > li { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  padding: 6px 0; /* Adds vertical spacing for better click targets */
+}
+
+.trash { 
+  width: 18px;    /* Increased from 10px */
+  height: 18px;   /* Increased from 10px */
+  cursor: pointer; /* Makes it clear the button is clickable */
+  object-fit: contain; /* Ensures the icon image doesn't distort */
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+
+
+.enter { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust size to fit your design */
+  width: 20px; 
+  height: 20px; 
+  cursor: pointer;
+}
+
+.item{
+    display: flex;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#item {
+    border: unset;
+}
+
+
+.new-item{
+    display: flex;
+    justify-content: space-between;
+   
+    border-bottom: 1px solid black;
+}
+
